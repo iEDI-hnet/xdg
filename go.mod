@@ -1,4 +1,4 @@
-module github.com/adrg/xdg
+module github.com/iEDI-hnet/xdg
 
 go 1.19
 
