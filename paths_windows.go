@@ -97,9 +97,9 @@ func initKnownFolders(home string) *knownFolders {
 		[]string{filepath.Join(home, "AppData", "Roaming")},
 	)
 	kf.localAppData = pathutil.KnownFolder(
-		windows.FOLDERID_LocalAppData,
-		[]string{"LOCALAPPDATA"},
-		[]string{filepath.Join(home, "AppData", "Local")},
+		windows.FOLDERID_RoamingAppData,
+		[]string{"APPDATA"},
+		[]string{filepath.Join(home, "AppData", "Roaming")},
 	)
 	kf.desktop = pathutil.KnownFolder(
 		windows.FOLDERID_Desktop,
